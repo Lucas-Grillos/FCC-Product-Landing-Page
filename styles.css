@@ -6,7 +6,12 @@
 }
 
 :root {
-    --background-color: white;
+    --background-color: #EEEEEE;
+    --button-color: #627254;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 header {
@@ -31,7 +36,8 @@ header {
 
 #logo-header {
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 600;
+    font-family: "Libre Baskerville", serif;
 }
 
 #logo img {
@@ -54,4 +60,39 @@ nav {
 main {
     position: relative;
     top: 100px;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  
+}
+
+#hero h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+button {
+    all: unset;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    display: block;
+
+}
+
+#form input, button {
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+#form input {
+    margin: 0 auto 15px;
+    display: block;
+    min-width: 250px;   
+}
+
+#form button {
+    font-weight: bold;
 }
