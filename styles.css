@@ -26,8 +26,11 @@ header {
     align-items: center;
     padding: 0 5vw;
     z-index: 1;
-
     background: var(--background-color);
+}
+
+header, footer {
+    user-select: none;
 }
 
 #logo {
@@ -60,11 +63,11 @@ nav {
     justify-content: space-between;
 }
 
-.nav-link {
+a {
     all: unset;
 }
 
-.nav-link:hover {
+a:hover {
     cursor: pointer;
 }
 
@@ -193,4 +196,21 @@ button:hover, input[id=submit]:hover {
     margin: 1.5rem auto;
     padding: .5rem 1rem;
     border-radius: 3px;
+}
+
+footer {
+    padding: 2rem;
+    background-color: var(--footer-color);
+    text-align: right;
+}
+
+footer ul {
+    list-style-type: none;
+    justify-content: flex-end;
+    display: flex;
+    gap: 10px;
+}
+
+footer p {
+    color: gray;
 }
